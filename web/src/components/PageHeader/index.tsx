@@ -11,6 +11,7 @@ import './style.css';
 //? com esse sinal o campo não é obrigatório.
 interface PageHeaderProps{
   title: string;
+  description?: string;
 }
 
 //componente escrito em forma de função
@@ -23,6 +24,7 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) =>  {
       </div>
       <div className="header-content">
         <strong>{props.title}</strong>
+        {props.description && <p>{props.description}</p>}
         {props.children}
       </div>
     </header>
