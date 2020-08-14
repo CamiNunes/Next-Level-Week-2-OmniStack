@@ -31,7 +31,7 @@ function Landing(){
           <Link to="/study" className="study"><img src={studyIcon} alt="Estudar"></img>Estudar</Link>
           <Link to="/give-classes" className="give-classes"><img src={giveClassesIcon} alt="Dar Aulas"></img>Dar Aulas</Link>
         </div>
-  <span className="total-connections"> Total de { totalConnections } conexões já realizadas. 
+          <span className="total-connections"> Total de { totalConnections } conexões já realizadas. 
           <img src={purpleHeartIcon} alt="Coração Roxo"/>
         </span>
       </div>
